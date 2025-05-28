@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Table User";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // atau null kalau untuk PDF
+}
+
+<div class="text-center">
+    <h2>Export Menu</h2>
+    <a href="/Export/DownloadPdf" target="_blank">Download PDF</a> |
+    <a href="/Export/DownloadExcel" target="_blank">Download Excel</a>
+</div>
+
+<hr />
+
+<table class="table table-bordered table-striped mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @* Contoh dummy data untuk ditampilkan *@
+        <tr>
+            <td>1</td>
+            <td>Rizki Ramadhan</td>
+            <td>rizki@example.com</td>
+            <td>Admin</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sarah Amelia</td>
+            <td>sarah@example.com</td>
+            <td>User</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Yusuf Alfarizi</td>
+            <td>yusuf@example.com</td>
+            <td>Manager</td>
+        </tr>
+    </tbody>
+</table>
